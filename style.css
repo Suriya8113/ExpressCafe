@@ -556,7 +556,7 @@ display: none;
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
   max-width: 1200px;
   width: 100%;
   align-items: start;
@@ -591,15 +591,15 @@ display: none;
 
 .info-content h4 {
   font-size: 1.3rem;
-  color: #080808;
+  color: #5a5a5a;
   font-weight: bold;
   margin-top: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.info-content p {
-  color: #ff0000;
+.info-box .info-content p {
+  color: #000000;
   font-size: 1rem;
   line-height: 1.6;
   margin-top: .5rem;
