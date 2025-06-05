@@ -197,19 +197,19 @@ html {
   color: white;
   font-weight: bold;
   line-height: 1.6;
-  font-size: 1.rem;
+  font-size: 1.25rem;
 
 }
 
 .hero-buttons {
-  margin-top: 2rem;
+  margin-top: 3rem;
   gap: 3rem;
 
 
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -381,8 +381,8 @@ h3::after {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
   margin: 0 auto;
 }
 
@@ -396,7 +396,7 @@ h3::after {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -426,7 +426,6 @@ h3::after {
   background-color: rgb(255, 216, 237);
   text-align: center;
   height: 100vh;
-  overflow-y: hidden;
 }
 
 .section-title {
@@ -503,13 +502,7 @@ h3::after {
 }
 
 .swiper .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin: 0 5px;
-  position: absolute;
-  background-color: rgb(170, 167, 164);
-  opacity: 1;
+display: none;
 
 
 }
@@ -949,7 +942,7 @@ h3::after {
 
 /* Responsive (Mobile) */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-links {
     display: none;
   }
@@ -958,10 +951,15 @@ h3::after {
     display: block;
   }
 
+
+
   .coffee {
-    margin-left: 3.55rem;
+    margin-left: 2.5rem;
   }
 
+  .nav-bar-h1 h1{
+    font-size: 1.5rem;
+  }
   .mobile-nav {
     display: none;
     position: fixed;
@@ -1052,6 +1050,11 @@ h3::after {
     width: 100%;
     height: 100vh;
 
+  }
+
+  .btn{
+    padding: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .home-content img {
@@ -1159,11 +1162,12 @@ h3::after {
   }
 
   .testimonials-section .testimonial .feedback {
+    margin-top: 0.5rem;
     font-size: 0.85rem;
   }
 
   .testimonials-section .testimonial .user-image {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
   }
 
@@ -1273,7 +1277,7 @@ h3::after {
   }
 
   .contacts-section {
-    margin-left: 0;
+    margin-left: -0.5rem;
   }
 
   .contacts-section h2::after {
